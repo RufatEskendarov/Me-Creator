@@ -93,8 +93,8 @@ function render(data) {
    ${data.tests}
   ## Questions
    Have questions about this project?  
-   GitHub: https://github.com/${data.github}  
-   Email: ${data.email}
+   GitHub: https://github.com/${data.github}   
+   Email: ${data.email} \n
    ${createLinkedIn(data.linkedin)}
 `;
 }

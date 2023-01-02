@@ -1,5 +1,5 @@
 
-  # fffffffff
+  # dsdsd
   
   ## Table of Contents
    * [Description](#description)
@@ -13,13 +13,13 @@
    * [Questions](#questions)
 
   ## Description
-   fffffffff
+   dsds
   ## Installation
-   fffffff
+   dsd
   ## Usage
-   fff
+   dsdds
   ## Credits
-    ffffffffffffffffffffff
+    dsdsdsds
     
   ## Licenses
     This project is covered under the MIT license. To learn more about what this means, click the license button at the top.
@@ -27,11 +27,12 @@
   ## Features and Technologies
    JavaScript
   ## Contributing
-   fffffffff
+   dsds
   ## Tests
-   fffffff
+   dsds
   ## Questions
    Have questions about this project?  
-   GitHub: https://github.com/ffffffffff  
-   Email: ffffffffffff
-   LinkedIn: https://www.linkedin.com/in/ffffff-ffffffffff/
+   GitHub: https://github.com/dsdsd   
+   Email: dsdsd 
+
+   LinkedIn: https://www.linkedin.com/in/dsdsd-dsdsdsd/
