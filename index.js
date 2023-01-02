@@ -55,7 +55,7 @@ const questions = [
   {
     type: "input",
     name: "linkedin",
-    message: "Please enter your email address:",
+    message: "Please enter your LinkedIn accaunt's link",
     when: ({ confirmLinkedIn }) => {
       if (confirmLinkedIn) {
         return true;
@@ -123,6 +123,26 @@ const questions = [
     },
   },
   {
+    type: "confirm",
+    name: "confirmCredits",
+    message: "Would you like to include a Credits section to your README file?",
+    default: false,
+  },
+  {
+    type: "input",
+    name: "credits",
+    message:
+      "Please list your collaborators, if any, with links to their GitHub profiles or If you followed tutorials, include links to those here as well:",
+    when: ({ confirmCredits }) => {
+      if (confirmCredits) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
+
+  {
     type: "input",
     name: "contributing",
     message: "How can others contribute to your project?",
@@ -171,3 +191,19 @@ const questions = [
     },
   },
 ];
+
+// TODO: Create a function to write README file
+const writeToFile = function (data) {
+  return new Promise(function (resolve, reject) {
+    fs.writeFile("./README2.md", data, function (err) {
+      if (err) {
+        reject(err);
+        return;
+      }
+      resolve({
+        ok: true,
+        message: console.log("Success! Your README file was created!"),
+      });
+    });
+  });
+};
