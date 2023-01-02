@@ -55,7 +55,7 @@ const questions = [
   {
     type: "input",
     name: "linkedin",
-    message: "Please enter your LinkedIn accaunt's link",
+    message: "Please enter your full name that is writen in LinkedIn",
     when: ({ confirmLinkedIn }) => {
       if (confirmLinkedIn) {
         return true;
@@ -195,15 +195,34 @@ const questions = [
 // TODO: Create a function to write README file
 const writeToFile = function (data) {
   return new Promise(function (resolve, reject) {
-    fs.writeFile("./README2.md", data, function (err) {
+    fs.writeFile("./createdMeFile/README.md", data, function (err) {
       if (err) {
         reject(err);
         return;
       }
       resolve({
         ok: true,
-        message: console.log("Success! Your README file was created!"),
+        message: console.log(
+          "Success! Your README file was created! Please navigate to the 'createdMeFile' folder to see your README!"
+        ),
       });
     });
   });
 };
+
+// TODO: Create a function to initialize app
+const init = function () {
+  return inquirer.prompt(questions);
+};
+
+//Init call to run app
+init()
+  .then((inputs) => {
+    return render(inputs);
+  })
+  .then((data) => {
+    return writeToFile(data);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
