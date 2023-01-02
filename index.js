@@ -46,16 +46,20 @@ const questions = [
       }
     },
   },
-
+  {
+    type: "confirm",
+    name: "confirmLinkedIn",
+    message: "Would you like to include a LinkedIn page link?",
+    default: false,
+  },
   {
     type: "input",
     name: "linkedin",
     message: "Please enter your email address:",
-    validate: (linkedin) => {
-      if (linkedin) {
+    when: ({ confirmLinkedIn }) => {
+      if (confirmLinkedIn) {
         return true;
       } else {
-        console.log("Please provide your email adress ...  ");
         return false;
       }
     },
