@@ -57,7 +57,7 @@ const questions = [
   {
     type: "input",
     name: "linkedin",
-    message: "Please enter your full name that is writen in LinkedIn",
+    message: "Please enter your full name that is writen in LinkedIn:",
     when: ({ confirmLinkedIn }) => {
       if (confirmLinkedIn) {
         return true;
@@ -97,7 +97,7 @@ const questions = [
   {
     type: "input",
     name: "installation",
-    message: "Please enter instructions for installation?",
+    message: "Please enter instructions for installation:",
     validate: (installation) => {
       if (installation) {
         return true;
@@ -112,7 +112,7 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "Instructions for usage:",
+    message: "Please enter instructions for usage:",
     validate: (usage) => {
       if (usage) {
         return true;
@@ -162,8 +162,7 @@ const questions = [
   {
     type: "input",
     name: "tests",
-    message:
-      "Describe the tests written for your application and how to use them:",
+    message: "Describe the tests written for your application:",
     validate: (tests) => {
       if (tests) {
         return true;
