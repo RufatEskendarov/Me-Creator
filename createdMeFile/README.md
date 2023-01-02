@@ -1,5 +1,5 @@
 
-  # sdsdsdsd
+  # dsdsd
   
   ## Table of Contents
    * [Description](#description)
@@ -15,22 +15,23 @@
   ## Description
    dsdsd
   ## Installation
-   dsds
-  ## Usage
    dsdsd
+  ## Usage
+   sdsd
   ## Credits
-   undefined
-   ## Licenses
+      sdsdsdsdsdsd
+    
+  ## Licenses
       This project is covered under the MIT license. To learn more about what this means, click the license button at the top.
    [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
   ## Features and Technologies
    JavaScript,Node.js
   ## Contributing
-   dsdsdsd
+   sdsdsd
   ## Tests
-   dsdsd
+   sdsd
   ## Questions
    Have questions about this project?  
-   GitHub: https://github.com/dsdsds  
-   Email: sdsdsd
-   LinkedIn: https://www.linkedin.com/in/dsd-dsdsds/
+   GitHub: https://github.com/dsdsdsd  
+   Email: dsdsd
+   LinkedIn: https://www.linkedin.com/in/dsds-dsdsd/

@@ -36,8 +36,8 @@ function createLicenseSection(license) {
   }
 }
 
-//Function that creates the license
-// If there is no license, return an empty string
+//Function that creates the LinkedIn link
+// If there is no LinkedIn, return an empty string
 function createLinkedIn(linkedin) {
   if (!linkedin) {
     return ``;
@@ -45,6 +45,18 @@ function createLinkedIn(linkedin) {
     return `LinkedIn: https://www.linkedin.com/in/${linkedin
       .replace(" ", "-")
       .toLowerCase()}/`;
+  }
+}
+
+//Function that creates the Credits
+// If there is no Credit, return an empty string
+function createCredits(credits) {
+  if (!credits) {
+    return ``;
+  } else {
+    return `## Credits
+      ${credits}
+    `;
   }
 }
 
@@ -70,9 +82,8 @@ function render(data) {
    ${data.installation}
   ## Usage
    ${data.usage}
-  ## Credits
-   ${data.credits}
-   ${createLicenseSection(data.licenses)}
+  ${createCredits(data.credits)}
+  ${createLicenseSection(data.licenses)}
    ${createLicenseBadge(data.licenses)}
   ## Features and Technologies
    ${data.features}
