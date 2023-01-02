@@ -54,37 +54,37 @@ function render(data) {
   # ${data.title}
   
   ## Table of Contents
-    * [Description](#description)
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Credits](#credits)
-    * [Licenses](#licenses)
-    * [Features and Technologies](#features)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
+   * [Description](#description)
+   * [Installation](#installation)
+   * [Usage](#usage)
+   * [Credits](#credits)
+   * [Licenses](#licenses)
+   * [Features and Technologies](#features)
+   * [Contributing](#contributing)
+   * [Tests](#tests)
+   * [Questions](#questions)
 
   ## Description
-    ${data.description}
+   ${data.description}
   ## Installation
-    ${data.installation}
+   ${data.installation}
   ## Usage
-    ${data.usage}
+   ${data.usage}
   ## Credits
-    ${data.credits}
-    ${createLicenseSection(data.licenses)}
-    ${createLicenseBadge(data.licenses)}
+   ${data.credits}
+   ${createLicenseSection(data.licenses)}
+   ${createLicenseBadge(data.licenses)}
   ## Features and Technologies
-    ${data.features}
+   ${data.features}
   ## Contributing
-    ${data.contributing}
+   ${data.contributing}
   ## Tests
-    ${data.tests}
+   ${data.tests}
   ## Questions
-    Have questions about this project?  
-    GitHub: https://github.com/${data.github}  
-    Email: ${data.email}
-    ${createLinkedIn(data.linkedin)}
+   Have questions about this project?  
+   GitHub: https://github.com/${data.github}  
+   Email: ${data.email}
+   ${createLinkedIn(data.linkedin)}
 `;
 }
 
