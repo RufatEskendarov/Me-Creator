@@ -13,7 +13,7 @@ To install the application, first you need to download the NODE package, to do t
 After downloading the Node Package Manager (npm) you are ready to use the application. To do this, you need to write "node .\index.js" in the command line and answer the questions provided by the program.
 See the video for more details by following the link below.
 
-![how to use](assets/images/screenshot.png)
+![how to use](https://drive.google.com/file/d/1O7JPHl10pMdPE7uqEmME8xEOrSfcaHzC/view)
 
 ## License
 

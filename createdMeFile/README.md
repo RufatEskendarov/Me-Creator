@@ -27,7 +27,7 @@
   ## Contributing
    please contact me using the contacts below
   ## Tests
-   Manual testing was done
+   Manual test was done
   ## Questions
    Have questions about this project?  
    GitHub: https://github.com/RufatEskendarov   
