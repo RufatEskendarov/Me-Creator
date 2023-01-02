@@ -32,7 +32,7 @@ function createLicenseSection(license) {
     return ``;
   } else {
     return `## Licenses
-    This project is covered under the ${license} license. To learn more about what this means, click the license button at the top.`;
+    This project is covered under the ${license} license. To learn more about what this means, click the license button below.`;
   }
 }
 
@@ -94,7 +94,7 @@ function render(data) {
   ## Questions
    Have questions about this project?  
    GitHub: https://github.com/${data.github}   
-   Email: ${data.email} \n
+   Email: ${data.email}  
    ${createLinkedIn(data.linkedin)}
 `;
 }
