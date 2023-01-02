@@ -2,6 +2,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+const render = require("./render");
+
 // TODO: Create an array of questions for user input
 const questions = [
   {
@@ -189,6 +191,21 @@ const questions = [
         return false;
       }
     },
+  },
+  {
+    type: "checkbox",
+    name: "features",
+    message:
+      "What type of features and technologies would you like to include?",
+    choices: [
+      "JavaScript",
+      "HTML",
+      "CCS",
+      "Node.js",
+      "Angular.js",
+      "React.js",
+      "Java",
+    ],
   },
 ];
 

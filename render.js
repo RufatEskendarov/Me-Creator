@@ -38,18 +38,28 @@ function createLicenseSection(license) {
 
 //Function that creates the license
 // If there is no license, return an empty string
-function createLinkedIn() {}
+function createLinkedIn(linkedin) {
+  if (!linkedin) {
+    return ``;
+  } else {
+    return `LinkedIn: https://www.linkedin.com/in/${linkedin
+      .replace(" ", "-")
+      .toLowerCase()}/`;
+  }
+}
 
 //Function that creates markdown for README
 function render(data) {
-  return `# ${data.title}
+  return `
+  # ${data.title}
   
-    ## Table of Contents
+   ## Table of Contents
     * [Description](#description)
     * [Installation](#installation)
     * [Usage](#usage)
     * [Credits](#credits)
     * [Licenses](#licenses)
+    * [Features and Technologies](#features)
     * [Contributing](#contributing)
     * [Tests](#tests)
     * [Questions](#questions)
@@ -64,6 +74,8 @@ function render(data) {
     ${data.credits}
     ${createLicenseSection(data.licenses)}
     ${createLicenseBadge(data.licenses)}
+    ## Features and Technologies
+    ${data.features}
     ## Contributing
     ${data.contributing}
     ## Tests
@@ -72,9 +84,7 @@ function render(data) {
     Have questions about this project?  
     GitHub: https://github.com/${data.github}  
     Email: ${data.email}
-    LinkedIn: https://www.linkedin.com/in/${
-      data.linkedin.replace(" ", "-").toLowerCase
-    }/
+    ${createLinkedIn(data.linkedin)}
     `;
 }
 
